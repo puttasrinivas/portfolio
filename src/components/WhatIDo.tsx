@@ -95,9 +95,9 @@ const WhatIDo = () => {
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
+                <div className="what-tags">React JS</div>
                 <div className="what-tags">Angular</div>
-                <div className="what-tags">Next.js</div>
+                <div className="what-tags">Redux</div>
                 <div className="what-tags">TypeScript</div>
                 <div className="what-tags">JavaScript</div>
                 <div className="what-tags">Material UI</div>
@@ -126,22 +126,23 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>BACKEND & AI</h3>
+              <h4>Scalable Architecture & Intelligent Systems</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Designing robust APIs and microservices. Actively exploring AI-driven solutions, developing LLM applications and retrieval pipelines.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset & Learning</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
+                <div className="what-tags">Node JS</div>
+                <div className="what-tags">Express JS</div>
                 <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">GraphQL</div>
                 <div className="what-tags">REST APIs</div>
                 <div className="what-tags">Microservices</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">LangChain</div>
+                <div className="what-tags">RAG Systems</div>
               </div>
               <div className="what-arrow"></div>
             </div>

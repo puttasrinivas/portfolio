@@ -1,5 +1,92 @@
 import "./styles/Career.css";
 
+const careers = [
+  {
+    title: "Integrity Connect",
+    company: "Integrity Marketing Group",
+    role: "Senior UI Developer",
+    year: "NOW",
+    desc: "Designing and implementing responsive UI using React JS. Publishing APIs through Azure API Management. Deployed applications on AWS and Jenkins for scalability.",
+  },
+  {
+    title: "Planning and Execution Tracker",
+    company: "Microsoft",
+    role: "UI Lead Developer",
+    year: "2022",
+    desc: "Used HTML5, CSS3, Fabric UI for developing the components. Configured Azure Pipelines for creating build and deployment.",
+  },
+  {
+    title: "CBRE Host",
+    company: "CBRE",
+    role: "Senior UI Developer",
+    year: "2021",
+    desc: "Used HTML5, CSS3, JSON and JavaScript. Implemented React components both functional and classical for UI widgets and Redux State Management.",
+  },
+  {
+    title: "Tietoevry Projects",
+    company: "Tietoevry",
+    role: "Sr. UI Developer",
+    year: "2021",
+    desc: "Designed dynamic pages using React. Developed React container components. App Deployment on AWS. Used Ant UI React Library.",
+  },
+  {
+    title: "Marshall School Fee App",
+    company: "Girmiti Software PVT LTD",
+    role: "Senior UI Developer",
+    year: "2020",
+    desc: "Reworked single page applications using React, Redux, React-Router, and Bootstrap. Enhanced and built reusable components.",
+  },
+  {
+    title: "Bosch Mobility",
+    company: "Axcend Automation",
+    role: "Sr UI Developer",
+    year: "2019",
+    desc: "Developed enterprise web applications using ReactJS and Redux architecture. Built reusable class components using React Redux.",
+  },
+  {
+    title: "Wadhwani Advantage",
+    company: "Nineleaps",
+    role: "UI Developer",
+    year: "2019",
+    desc: "Developed React Js pages and Single Page Applications. Handled responsive design and isomorphic architectures.",
+  },
+  {
+    title: "TESCO My Product",
+    company: "Nineleaps",
+    role: "UI Developer",
+    year: "2018",
+    desc: "Assisted in Designing and developing UI for an internal Web-based application using ReactJS XML, HTML and CSS.",
+  },
+  {
+    title: "Youforma",
+    company: "Nineleaps",
+    role: "UI Developer",
+    year: "2018",
+    desc: "Designed Frontend within object-oriented JavaScript Framework using React JS. Used React flux for single directional flow.",
+  },
+  {
+    title: "Hubble Homes",
+    company: "Goggery Software Solutions",
+    role: "Web App Developer",
+    year: "2015",
+    desc: "Web development using React and Redux. Extensively used jQuery, Node.js and solved Callback hells in Node.js using Promises.",
+  },
+  {
+    title: "R- Groceries",
+    company: "Goggery Software Solutions",
+    role: "Web App Developer",
+    year: "2014",
+    desc: "Implemented Presentation layer using CSS Framework, Wire-framing, and HTML5. Used UI-router in Angular to make this a single page application.",
+  },
+  {
+    title: "Markoo",
+    company: "Goggery Software Solutions",
+    role: "Web App Developer",
+    year: "2013",
+    desc: "Developed user interface by using the AngularJS for SPA development. Responsive design for desktop, Tablets and mobile users.",
+  },
+];
+
 const Career = () => {
   return (
     <div className="career-section section-container">
@@ -12,48 +99,20 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+          {careers.map((career, index) => (
+            <div className="career-info-box" key={index}>
+              <div className="career-info-in">
+                <div className="career-role">
+                  <h4>{career.role}</h4>
+                  <h5>
+                    {career.company} {career.title ? `- ${career.title}` : ""}
+                  </h5>
+                </div>
+                <h3>{career.year}</h3>
               </div>
-              <h3>2020</h3>
+              <p>{career.desc}</p>
             </div>
-            <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
-              </div>
-              <h3>2021</h3>
-            </div>
-            <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
-              </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>
