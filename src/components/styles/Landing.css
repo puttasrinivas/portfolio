@@ -19,13 +19,13 @@
   left: 0%;
   z-index: 15;
   position: fixed;
-  width: 300px;
-  height: 300px;
-  background-color: #22d3ee;
-  box-shadow: inset -50px 40px 50px rgba(0, 180, 180, 0.6);
-  filter: blur(60px);
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #2dd4bf 0%, #0e7e74 60%, transparent 100%);
+  filter: blur(80px);
   border-radius: 50%;
   animation: loadingCircle 5s linear infinite;
+  opacity: 0.25;
 }
 
 .nav-fade {
@@ -34,7 +34,7 @@
   width: 100%;
   height: 130px;
   background-image: linear-gradient(0deg,
-      transparent,
+      rgba(255, 255, 255, 0),
       var(--backgroundColor) 70%);
   pointer-events: none;
   z-index: 12;
@@ -61,11 +61,11 @@
   display: none;
   width: 300px;
   height: 300px;
-  background-color: #22d3ee;
-  box-shadow: inset -50px 40px 50px rgba(0, 180, 180, 0.6);
-  filter: blur(50px);
+  background: radial-gradient(circle, #f59e0b 0%, #b45309 60%, transparent 100%);
+  filter: blur(70px);
   border-radius: 50%;
   animation: loadingCircle2 5s linear infinite;
+  opacity: 0.15;
 }
 
 @keyframes loadingCircle2 {
@@ -94,9 +94,8 @@
   width: 400px;
   height: 400px;
   z-index: 1;
-  background-color: #22d3ee;
+  background: radial-gradient(circle, #2dd4bf 0%, #0e7e74 60%, transparent 100%);
   transform: translate(-50%, 36%) scaleX(1.4);
-  box-shadow: inset 66px 35px 85px 0px rgba(0, 180, 180, 0.65);
   filter: blur(50px);
   border-radius: 50%;
   top: 50%;
@@ -124,7 +123,7 @@
   width: 100vw;
   height: 250px;
   background-image: linear-gradient(to bottom,
-      transparent,
+      rgba(255, 255, 255, 0),
       var(--backgroundColor) 70%);
   bottom: -50px;
   left: 50%;
@@ -234,7 +233,7 @@
 }
 
 h2.landing-info-h2 {
-  color: #14b8a6;
+  color: #0d9488;
   font-size: 42px;
   width: 120%;
   margin: 0;
@@ -257,7 +256,7 @@ h2.landing-info-h2 {
   z-index: 3;
   background-image: linear-gradient(0deg,
       var(--backgroundColor) 40%,
-      rgba(0, 0, 0, 0) 110%);
+      rgba(255, 255, 255, 0) 110%);
   top: 0;
   left: 0;
 }

@@ -3,7 +3,7 @@
   width: 100vw;
   height: var(--vh);
   /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
-  background-color: #e0f2f1;
+  background-color: #1a1a2e;
   z-index: 999999999;
   display: flex;
   place-items: center;
@@ -13,7 +13,8 @@
 .loading-button {
   padding: 20px 50px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: #ffffff;
+  color: #1a1a2e;
   overflow: hidden;
   font-size: 18px;
   font-weight: 500;
@@ -23,7 +24,7 @@
 
 .loading-button::before {
   content: "";
-  background-color: #ffffff;
+  background-color: #1a1a2e;
   top: var(--mouse-y);
   left: var(--mouse-x);
   border-radius: 50%;
@@ -52,7 +53,7 @@
   min-width: 0px;
   min-height: 0px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: #ffffff;
   overflow: hidden;
   transition: 0.8s ease-in-out;
   transition-delay: 0.2s;
@@ -101,7 +102,7 @@
 
 .loading-content {
   position: relative;
-  background-color: #000;
+  background-color: #ffffff;
   width: 100%;
   overflow: hidden;
   transition: 0.6s;
@@ -150,7 +151,7 @@
   transform: translate(100%, -50%);
   width: 15px;
   height: 25px;
-  background-color: white;
+  background-color: #1a1a2e;
   animation: blink 1s linear infinite;
 }
 
@@ -210,7 +211,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  color: var(--backgroundColor);
+  color: #ffffff;
 }
 
 .loader-title {
@@ -288,7 +289,7 @@
   position: relative;
   width: 10px;
   height: 60px;
-  background-color: #000;
+  background-color: #ffffff;
   display: block;
 }
 
@@ -316,7 +317,7 @@
   left: 0;
   width: 100%;
   transform: translateY(-50%);
-  color: var(--backgroundColor);
+  color: #ffffff;
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
@@ -331,7 +332,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-color: var(--backgroundColor);
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
   border-radius: 50px;

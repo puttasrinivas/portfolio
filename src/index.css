@@ -7,8 +7,8 @@
   font-style: normal;
   line-height: 1.5;
   scroll-behavior: smooth;
-  color-scheme: light dark;
-  color: #eae5ec;
+  color-scheme: light;
+  color: #1a1a2e;
   background-color: var(--backgroundColor);
 
   font-synthesis: none;
@@ -18,8 +18,10 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  --accentColor: #5eead4;
-  --backgroundColor: #0a0e17;
+  --accentColor: #0d9488;
+  --accentColorRGB: 13, 148, 136;
+  --backgroundColor: #ffffff;
+  --surfaceColor: rgba(0, 0, 0, 0.02);
   --vh: 100vh;
   --vh: 100svh;
 }
@@ -66,7 +68,7 @@ main {
 body {
   margin: 0;
   height: auto;
-  background-color: #050810;
+  background-color: #ffffff;
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;

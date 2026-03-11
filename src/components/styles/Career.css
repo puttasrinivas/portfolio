@@ -17,7 +17,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background: linear-gradient(180deg, #0d9488, #1a1a2e);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,10 +49,10 @@
 }
 
 .career-info-box:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.02);
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .career-info-box p {
@@ -61,7 +61,7 @@
   font-weight: 300;
   margin: 0;
   line-height: 1.6;
-  color: #d1d5db;
+  color: #4b5563;
 }
 
 .career-info-in {
@@ -77,6 +77,7 @@
   font-weight: 500;
   line-height: 45px;
   opacity: 0.8;
+  color: #111827;
 }
 
 .career-info h4 {
@@ -85,6 +86,7 @@
   letter-spacing: 0.8px;
   font-weight: 500;
   margin: 0;
+  color: #111827;
 }
 
 .career-info h5 {
@@ -104,7 +106,7 @@
   width: 3px;
   height: 100%;
   background-image: linear-gradient(to top,
-      #14b8a6 20%,
+      #0d9488 20%,
       var(--accentColor) 50%,
       transparent 95%);
   max-height: 0%;
@@ -115,12 +117,11 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #14b8a6;
+  background-color: #0d9488;
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 8px #5eead4,
-    0px 0px 110px 20px #a5f3fc;
+  box-shadow: 0px 0px 5px 2px rgba(13, 148, 136, 0.3), 0px 0px 15px 8px rgba(13, 148, 136, 0.1);
   animation: timeline 0.8s linear infinite forwards;
 }
 
@@ -131,7 +132,7 @@
   50%,
   70%,
   90% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px rgba(13, 148, 136, 0.3);
   }
 
   10%,
@@ -140,19 +141,17 @@
   100%,
   64%,
   80% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px rgba(13, 148, 136, 0.3), 0px 0px 15px 5px rgba(13, 148, 136, 0.1);
   }
 }
 
 @keyframes timeline2 {
   0% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px rgba(13, 148, 136, 0.3);
   }
 
   100% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px rgba(13, 148, 136, 0.3), 0px 0px 15px 5px rgba(13, 148, 136, 0.1);
   }
 }
 
